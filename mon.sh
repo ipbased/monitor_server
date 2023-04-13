@@ -1,4 +1,6 @@
 #!/bin/bash
+SITE_ROOT=$(dirname $(realpath $0))
+. $SITE_ROOT/env.sh
 curl="curl -sfkL"
 sec="_username=$OMD_USERNAME&_secret=$OMD_SECRET"
 arg="request_format=python&output_format=json"
